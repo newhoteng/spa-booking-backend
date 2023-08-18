@@ -49,3 +49,5 @@ group :development do
 end
 
 gem 'rubocop'
+
+gem "jsonapi-serializer"
