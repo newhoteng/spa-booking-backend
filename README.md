@@ -172,6 +172,12 @@ rspec
 - GitHub: [@jeddaa](https://github.com/jeddaa)
 - Twitter: [jeddaah](https://twitter.com/_jeddaah)
 - LinkedIn: [@jedda](https://linkedin.com/in/fatihahoduwole)
+
+👤 **Roland Ntwali**
+
+- GitHub: [Roland-Ntwali](https://github.com/Roland-Ntwali)
+- LinkedIn: [roland-ntwali](https://www.linkedin.com/in/roland-ntwali/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -190,7 +196,7 @@ rspec
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Jeddaa/expense-Api/issues).
+Feel free to check the [issues page](https://github.com/newhoteng/spa-booking-backend/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,9 +212,9 @@ If you like this project please give it a star ⭐️ on github
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Microverse](https://bit.ly/MicroverseTN).
+We would like to thank [Microverse](https://bit.ly/MicroverseTN).
 
-This Project design is adobted based on the Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+This Project design is adobted based on the Original design idea by [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
