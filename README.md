@@ -63,7 +63,10 @@
 - **Authentication with devise**
 <!-- - **Authorization with cancan** -->
 - **View the all services available**
-- **Users can add or delete services**
+- **Users can add services**
+- **Users can make reservation of services**
+- **Users can view all reservations they have made**
+- **Users can delete services**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
