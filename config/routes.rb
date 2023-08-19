@@ -9,7 +9,17 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  #rooutes for spa services
+  namespace :api do
+    namespace :v1 do
+      resources :spa_services, only: [:index, :show]
+    end
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  #rooutes for reservations
+  namespace :api do
+    namespace :v1 do
+      resources :reservations, only: [:index, :show, :create, :destroy]
+    end
+  end
 end
