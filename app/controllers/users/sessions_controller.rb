@@ -1,25 +1,27 @@
-# frozen_string_literal: true
-
 class Users::SessionsController < Devise::SessionsController
-  # clear_respond_to
+  # POST localhost:3001/login
+  # DELETE localhost:3001/logout
   include RackSessionsFix
   respond_to :json
 
   private
+
   def respond_with(current_user, _opts = {})
     render json: {
-      status: { 
+      status: {
         code: 200, message: 'Logged in successfully.',
         data: { user: UserSerializer.new(current_user).serializable_hash[:data][:attributes] }
       }
     }, status: :ok
   end
+
   def respond_to_on_destroy
     if request.headers['Authorization'].present?
-      jwt_payload = JWT.decode(request.headers['Authorization'].split(' ').last, Rails.application.credentials.devise_jwt_secret_key!).first
+      jwt_payload = JWT.decode(request.headers['Authorization'].split.last,
+                               Rails.application.credentials.devise_jwt_secret_key!).first
       current_user = User.find(jwt_payload['sub'])
     end
-    
+
     if current_user
       render json: {
         status: 200,
@@ -35,7 +37,6 @@ class Users::SessionsController < Devise::SessionsController
 
   # before_action :configure_sign_in_params, only: [:create]
 
-  # GET localhost:3000/login
   # GET /resource/sign_in
   # def new
   #   super
