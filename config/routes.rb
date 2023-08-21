@@ -16,10 +16,19 @@ Rails.application.routes.draw do
     end
   end
 
-  #rooutes for reservations
+  #routes for reservations
   namespace :api do
     namespace :v1 do
       resources :reservations, only: [:index, :show, :create, :destroy]
+    end
+  end
+
+  # end point to get user's reservations
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: [:show ]do
+        resources :reservations, only: [:index]
+      end
     end
   end
 end
