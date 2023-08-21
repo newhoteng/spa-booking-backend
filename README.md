@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Expense Tracker App</b></h3>
+  <h3><b>The Spa Api</b></h3>
 
 </div>
 
@@ -11,7 +11,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Expense Tracker App ](#-expense-tracker-app-)
+- [📖 The Spa Api ](#-the-spa-api-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -33,9 +33,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Expense Tracker App <a name="about-project"></a>
+# 📖 The Spa Api <a name="about-project"></a>
 
-**Expense Tracker App** is a rails app built to help individuals or businesses manage their financial transactions and monitor their spending habits.
+**The Spa Api** is the backend rails Api for the spa app built to help individuals easily book their spa sessions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -59,12 +59,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-<!-- - **Set up controller** -->
-
+- **Set up controller**
 - **Authentication with devise**
-- **Authorization with cancan**
-- **Users can add transactions and expense**
-- **View the total amount of all expense**
+<!-- - **Authorization with cancan** -->
+- **View the all services available**
+- **Users can add services**
+- **Users can make reservation of services**
+- **Users can view all reservations they have made**
+- **Users can delete services**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,13 +74,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://expense-app-3t3b.onrender.com/)
+- [Live Demo]()
 
 <!-- Presentation -->
 
 ## Video Presentation <a name="video"></a>
 
--[Presentation Video](https://www.loom.com/share/793946bd7a9e4aa4a4a42c5bc81a82eb?sid=20acb184-62dc-41bd-9384-d145ffe8251d)
+-[Presentation Video]()
 
 <!-- GETTING STARTED -->
 
@@ -98,12 +100,12 @@ In order to run this project you need:
 ### Setup
 
 Install Ruby
-Go to github and find the repository Expense Tracker App
+Go to github and find the repository The Spa Api
 Click on code and copy then go to your gitbash cli on your computer Clone this repository to your desired folder
 
 ```sh
   cd my-folder
-  git clone https://github.com/Jeddaa/expense-app.git
+  git clone https://github.com/newhoteng/spa-booking-backend
   bundle install
 
 ```
@@ -111,7 +113,7 @@ Click on code and copy then go to your gitbash cli on your computer Clone this r
 ### Install
 
 ```
-git clone https://github.com/Jeddaa/expense-app.git
+git clone https://github.com/newhoteng/spa-booking-backend
 ```
 
 ### Usage
@@ -143,24 +145,42 @@ bin/rails server
 rails s
 ```
 
-### Run test
+<!-- ### Run test
 
 To run test, run the following command in the terminal
 
 ```sh
 rspec
 
-```
+``` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
+
+👤 **Umair Hamza**
+
+- GitHub: [@emhamza](https://github.com/emhamza)
+- Twitter: [@uhamzaz](https://twitter.com/uhamzaz)
+- LinkedIn: [Umair Hamza](https://www.linkedin.com/in/umair-hamza-a8262b261/)
+
+👤 **Harriet Oteng**
+
+- GitHub: [@githubhandle](https://github.com/newhoteng)
+- Twitter: [@twitterhandle](https://twitter.com/HarrietOteng1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/harriet-oteng/)
 
 👤 **Fatihah Oduwole**
 
 - GitHub: [@jeddaa](https://github.com/jeddaa)
 - Twitter: [jeddaah](https://twitter.com/_jeddaah)
 - LinkedIn: [@jedda](https://linkedin.com/in/fatihahoduwole)
+
+👤 **Roland Ntwali**
+
+- GitHub: [Roland-Ntwali](https://github.com/Roland-Ntwali)
+- LinkedIn: [roland-ntwali](https://www.linkedin.com/in/roland-ntwali/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -179,7 +199,7 @@ rspec
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Jeddaa/expense-app/issues).
+Feel free to check the [issues page](https://github.com/newhoteng/spa-booking-backend/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,9 +215,9 @@ If you like this project please give it a star ⭐️ on github
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Microverse](https://bit.ly/MicroverseTN).
+We would like to thank [Microverse](https://bit.ly/MicroverseTN).
 
-This Project design is adobted based on the Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+This Project design is adobted based on the Original design idea by [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
