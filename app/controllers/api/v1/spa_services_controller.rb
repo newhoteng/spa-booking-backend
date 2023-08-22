@@ -8,4 +8,9 @@ class Api::V1::SpaServicesController < ApplicationController
     spa_service = SpaService.find(params[:id])
     render json: spa_service
   end
+
+  def destroy
+    reservation = SpaService.find(params[:id])
+    reservation.toggle!(:is_removed)
+  end
 end
