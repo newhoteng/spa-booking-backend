@@ -14,8 +14,7 @@ Rails.application.routes.draw do
   #routes for spa services
   namespace :api do
     namespace :v1 do
-      resources :spa_services, only: [:index, :show]
-    end
+      resources :spa_services, only: [:index, :show, :create]    end
   end
 
   #routes for reservations
