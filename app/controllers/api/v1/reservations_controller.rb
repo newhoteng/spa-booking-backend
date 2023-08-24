@@ -4,11 +4,13 @@ class Api::V1::ReservationsController < ApplicationController
     render json: reservations
   end
 
+  # GET /api/v1/reservations/1
   def show
     reservation = Reservation.find(params[:id])
     render json: reservation
   end
 
+  # POST /api/v1/reservations/1
   def create
     reservation = Reservation.new(reservation_params)
     if reservation.save
@@ -18,6 +20,7 @@ class Api::V1::ReservationsController < ApplicationController
     end
   end
 
+  # DELETE /api/v1/reservations/1
   def destroy
     reservation = Reservation.find(params[:id])
     if reservation.destroy
@@ -29,6 +32,7 @@ class Api::V1::ReservationsController < ApplicationController
 
   private
 
+  # Only allow a trusted parameter "white list" through.
   def reservation_params
     params.require(:reservation).permit(:city, :date, :user_id, :spa_service_id)
   end
