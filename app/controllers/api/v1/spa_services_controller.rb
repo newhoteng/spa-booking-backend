@@ -1,6 +1,6 @@
 class Api::V1::SpaServicesController < ApplicationController
   def index
-    spa_services = SpaService.all
+    spa_services = SpaService.all.order(:name)
     render json: spa_services
   end
 
