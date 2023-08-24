@@ -12,7 +12,8 @@ class Api::V1::SpaServicesController < ApplicationController
   def destroy
     reservation = SpaService.find(params[:id])
     reservation.toggle!(:is_removed)
-    
+  end
+
   def create
     spa_service = SpaService.new(spa_service_params)
     if spa_service.save
