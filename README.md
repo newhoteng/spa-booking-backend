@@ -37,6 +37,12 @@
 
 **The Spa Api** is the backend rails Api for the spa app built to help individuals easily book their spa sessions.
 
+## 🛠 Link to back-end <a name="link-frontend"></a>
+
+-- [Link to frontend-end!](https://github.com/newhoteng/spa-booking-frontend)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
