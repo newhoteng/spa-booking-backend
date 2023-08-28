@@ -15,13 +15,14 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-    - [🚀 Live Demo](#live-demo)
-    - [ Video Presentation](#video)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [Video Presentation ](#video-presentation-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Database ERD diagram](#database-erd-diagram)
     - [Get into development](#get-into-development)
     - [Run test](#run-test)
   - [👥 Authors ](#-authors-)
@@ -61,7 +62,6 @@
 
 - **Set up controller**
 - **Authentication with devise**
-<!-- - **Authorization with cancan** -->
 - **View the all services available**
 - **Users can add services**
 - **Users can make reservation of services**
@@ -125,6 +125,8 @@ cd my-project
 bundle install
 
 ```
+### Database ERD diagram
+![ERD diagram](images/ERD%20diagram.jpg)
 
 ### Get into development
 
@@ -145,14 +147,14 @@ bin/rails server
 rails s
 ```
 
-<!-- ### Run test
+### Run test
 
 To run test, run the following command in the terminal
 
 ```sh
 rspec
 
-``` -->
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
