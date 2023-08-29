@@ -15,19 +15,21 @@ RSpec.describe Reservation, type: :model do
     expect(reserve).to be_valid
   end
 
-  it 'reservation should be valid' do
+  it 'reservation should not be valid' do
     reserve.city = nil
     expect(reserve).to_not be_valid
   end
 
-  it 'reservation should be valid' do
+  it 'reservation.date should not be valid' do
     reserve.date = nil
     expect(reserve).to_not be_valid
   end
 
-  it 'reservation should be valid' do
+  it 'reservation.date should be a date object' do
     expect(reserve.date).to be_a(Date)
   end
 
-
+  it 'reservation.city should be a string' do
+    expect(reserve.city).to be_a(String)
+  end
 end
