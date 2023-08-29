@@ -19,10 +19,7 @@ RSpec.describe User, type: :model do
   end
 
   it 'bio should be present' do
-    expect(user).to be_valid
-  end
-
-  it 'photo should be present' do
-    expect(user).to be_valid
+    user.password = nil
+    expect(user).to_not be_valid
   end
 end
