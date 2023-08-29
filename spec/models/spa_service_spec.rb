@@ -1,9 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe SpaService, type: :model do
-  let(:user) { User.new(username: 'John Doe', email:'test@blog.com', password: 'password') }
+  let(:user) { User.new(username: 'John Doe', email: 'test@blog.com', password: 'password') }
   let(:spa_service) do
-    SpaService.create(name: 'facials', image: 'www.google.com', description: 'helps to get rid of dead skin', price:100, duration: 60.0, is_removed: false)
+    SpaService.create(name: 'facials', image: 'www.google.com', description: 'helps to get rid of dead skin', price: 100, duration: 60.0,
+                      is_removed: false)
   end
 
   before { user.save }
