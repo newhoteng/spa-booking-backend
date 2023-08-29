@@ -145,7 +145,7 @@ paths:
         '404':
           description: spa service not found
 servers:
-- url: http://localhost:3000/
+- url: http://localhost:3001/
   variables:
     defaultHost:
-      default: www.example.com
+      default: http://localhost:3001
