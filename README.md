@@ -28,6 +28,7 @@
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
+  - [🤝 API Documentation ](#-apiDoc-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
@@ -208,6 +209,14 @@ rspec
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/newhoteng/spa-booking-backend/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 API Documentation <a name="apiDoc"></a>
+
+Api Documentation for our Spa Booking app
+
+Feel free to check the [API Doc](http://127.0.0.1:3001/api-docs/index.html).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
