@@ -12,6 +12,7 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 The Spa Api ](#-the-spa-api-)
+  - [🛠 Link to back-end ](#-link-to-back-end-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -25,10 +26,12 @@
     - [Database ERD diagram](#database-erd-diagram)
     - [Get into development](#get-into-development)
     - [Run test](#run-test)
+    - [Kanban board](#kanban-board)
+    - [Final statement](#final-statement)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
-  - [🤝 API Documentation ](#-apiDoc-)
+  - [🤝 API Documentation ](#-api-documentation-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
@@ -162,6 +165,15 @@ To run test, run the following command in the terminal
 rspec
 
 ```
+### Kanban board
+
+[Link Kanban Board](https://github.com/users/newhoteng/projects/10)
+<br>
+[Initial state of our kanban board](https://github.com/newhoteng/spa-booking-backend/issues/17)
+
+### Final statement
+
+I'm proud to be a part of a talented team with 4 members who collaborate to achieve our goals and deliver exceptional results.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
