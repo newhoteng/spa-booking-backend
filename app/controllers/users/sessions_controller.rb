@@ -9,7 +9,7 @@ class Users::SessionsController < Devise::SessionsController
   private
 
   def respond_with(current_user, _opts = {})
-  # Render a JSON response for successful login.
+    # Render a JSON response for successful login.
     render json: {
       status: {
         code: 200, message: 'Logged in successfully.',

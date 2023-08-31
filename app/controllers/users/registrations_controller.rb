@@ -7,7 +7,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
 
   def respond_with(current_user, _opts = {})
-  # Render success message and user data if registration was successful.
+    # Render success message and user data if registration was successful.
     if resource.persisted?
       render json: {
         status: { code: 200, message: 'Signed up successfully.' },
