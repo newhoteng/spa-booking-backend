@@ -1,12 +1,15 @@
 class Users::SessionsController < Devise::SessionsController
   # POST localhost:3001/login
   # DELETE localhost:3001/logout
+
+  # Set the response format to JSON for this controller.
   include RackSessionsFix
   respond_to :json
 
   private
 
   def respond_with(current_user, _opts = {})
+  # Render a JSON response for successful login.
     render json: {
       status: {
         code: 200, message: 'Logged in successfully.',
