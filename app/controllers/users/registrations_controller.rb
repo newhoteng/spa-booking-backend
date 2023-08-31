@@ -14,6 +14,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         data: UserSerializer.new(current_user).serializable_hash[:data][:attributes]
       }
     else
+      # Render error message if registration failed.
       render json: {
         status: { message: "Registration failed. #{current_user.errors.full_messages.to_sentence}" }
       }, status: :unprocessable_entity
