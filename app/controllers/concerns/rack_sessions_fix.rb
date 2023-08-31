@@ -6,6 +6,7 @@ module RackSessionsFix
       false
     end
 
+    # Method to destroy the fake session (empty method, does nothing).
     def destroy; end
   end
   included do
