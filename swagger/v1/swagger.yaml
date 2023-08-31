@@ -1,0 +1,151 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/reservations":
+    get:
+      summary: Retrieves all reservations
+      tags:
+      - Reservations
+      responses:
+        '200':
+          description: reservations found
+    post:
+      summary: Creates a reservation
+      tags:
+      - Reservations
+      parameters: []
+      responses:
+        '201':
+          description: reservation created
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                treatment:
+                  type: string
+                description:
+                  type: string
+                image:
+                  type: string
+                duration:
+                  type: integer
+                user_id:
+                  type: integer
+                spa_service_id:
+                  type: integer
+              required:
+              - treatment
+              - duration
+              - user_id
+              - spa_service_id
+  "/api/v1/reservations/{id}":
+    get:
+      summary: Retrieves a reservation
+      tags:
+      - Reservations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: reservation found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  treatment:
+                    type: string
+                  description:
+                    type: string
+                  image:
+                    type: string
+                  duration:
+                    type: integer
+                  user_id:
+                    type: integer
+                  spa_service_id:
+                    type: integer
+                required:
+                - id
+                - treatment
+                - duration
+                - user_id
+                - spa_service_id
+        '404':
+          description: reservation not found
+    delete:
+      summary: Deletes a reservation
+      tags:
+      - Reservations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: reservation deleted
+        '404':
+          description: reservation not found
+  "/api/v1/spa_services":
+    get:
+      summary: Retrieves all spa services
+      tags:
+      - Spa Services
+      responses:
+        '200':
+          description: spa services found
+  "/api/v1/spa_services/{id}":
+    get:
+      summary: Retrieves a spa service
+      tags:
+      - Spa Services
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: spa service found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  image:
+                    type: string
+                  description:
+                    type: string
+                  price:
+                    type: number
+                required:
+                - id
+                - name
+                - price
+        '404':
+          description: spa service not found
+servers:
+- url: http://localhost:3001/
+  variables:
+    defaultHost:
+      default: http://localhost:3001

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  treatment: MyString
+  description: MyText
+  image: MyString
+  duration: 1
+  user: one
+  spa_service: one
+
+two:
+  treatment: MyString
+  description: MyText
+  image: MyString
+  duration: 1
+  user: two
+  spa_service: two
