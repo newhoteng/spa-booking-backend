@@ -32,6 +32,7 @@ class Users::SessionsController < Devise::SessionsController
         message: 'Logged out successfully.'
       }, status: :ok
     else
+      # Render a JSON response when no active session is found.
       render json: {
         status: 401,
         message: "Couldn't find an active session."
