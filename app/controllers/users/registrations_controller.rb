@@ -7,12 +7,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
 
   def respond_with(current_user, _opts = {})
+    # Render success message and user data if registration was successful.
     if resource.persisted?
       render json: {
         status: { code: 200, message: 'Signed up successfully.' },
         data: UserSerializer.new(current_user).serializable_hash[:data][:attributes]
       }
     else
+      # Render error message if registration failed.
       render json: {
         status: { message: "Registration failed. #{current_user.errors.full_messages.to_sentence}" }
       }, status: :unprocessable_entity

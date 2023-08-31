@@ -1,10 +1,12 @@
 module RackSessionsFix
+  # Method to check if the fake session is enabled (always returns false).
   extend ActiveSupport::Concern
   class FakeRackSession < Hash
     def enabled?
       false
     end
 
+    # Method to destroy the fake session (empty method, does nothing).
     def destroy; end
   end
   included do
