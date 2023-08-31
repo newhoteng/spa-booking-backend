@@ -1,4 +1,5 @@
 module RackSessionsFix
+  # Method to check if the fake session is enabled (always returns false).
   extend ActiveSupport::Concern
   class FakeRackSession < Hash
     def enabled?
